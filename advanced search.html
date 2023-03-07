@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        body{
+            font-family: arial,sans-serif;
+        }
+        nav{
+            float:right;
+        }
+        .button{
+            color:white;
+            background-color: blue;
+            border:none;
+            padding:8px;
+            float:left;
+        }
+        p.title{
+            color:red;
+            font-size: 20px;
+            margin: 25px 35px
+        }
+        th.search_name{
+            font-weight:normal;
+            height: 30px;
+            vertical-align: middle;
+            padding-bottom: 10px;
+        }
+
+        td.search_name{
+            float:left;
+            padding: 3px;
+            color: #222;
+            font-size: 13px;
+            line-height: 16px; 
+            vertical-align: middle;
+        }
+        .search_bar{
+            height: 27px;
+            width: 575px;
+            border-color: rgb(233, 233, 233);
+            border: 1px solid #ccc;
+            background: #fff;
+            margin: 3px;
+        }
+
+        span.example{
+            color: #666;
+            font-family: monospace;
+            font-size: 11px;
+            white-space: pre;
+        }
+
+        th.search_explain{
+            float:left;
+            font-size:13px;
+            color:#666;
+            height: 30px;
+            vertical-align: middle;
+            padding-bottom: 10px;
+        }
+        td.search_explain{
+            float:left;
+            color: #222;
+            font-size: 11px;
+            vertical-align: middle;
+        }
+      
+    </style>
+    <head>
+        <title>Advanced Search</title>
+    </head>
+    <body>
+        <nav>
+            <a href="index.html">Google Search</a>
+        </nav>
+        <p class="title">Advanced search</p>
+        <form action="https://www.google.com/search">
+        <table>
+            <tr>
+              <th class="search_name" >Find pages with...</th>
+              <th> </th>
+              <th class="search_explain">To do this in the search box.</th>
+            </tr>
+            <tr>
+              <td class="search_name">all these words:</td>
+              <td><input class="search_bar" type="text" name="as_q"><br><br></td>
+              <td class="search_explain">Type the important words:  <span class="example">tri-colour rat terrier</span></td>
+            </tr>
+            <tr>
+              <td class="search_name">this exact word or phrase:</td>
+              <td><input class="search_bar" type="text" name="as_epq"><br><br></td>
+              <td class="search_explain">Put exact words in quotes:  <span class="example">&quot;rat terrier &quot;</span></td>
+            </tr>
+            <tr>
+                <td class="search_name">any of these words:</td>
+                <td><input class="search_bar" type="text" name="as_oq"><br><br></td>
+                <td class="search_explain">Type <span class="example">OR</span>
+                    between all the words you want:  <span class="examlpe">miniature OR standard</span></td>
+            </tr> 
+            <tr>
+                <td class="search_name">none of these words:</td>
+                <td><input class="search_bar" type="text" name="as_eq"><br><br></td>
+                <td class="search_explain">Put a minus sign just before words that you don't want:  <span class="example">-rodent, -&quot;Jack Russell &quot;</span></td>
+            </tr> 
+            <tr>
+                <td> </td>
+                <td> </td>
+                <td><input class="button" type="submit" value="Advanced search" ></td>
+            </tr>
+          </table>
+        </form>                
+</html>
